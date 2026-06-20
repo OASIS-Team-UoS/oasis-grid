@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use OASIS Grid Explorer in research, please cite this software."
+title: "OASIS Grid Explorer"
+version: "0.1.0"
+date-released: 2026-06-20
+authors:
+  - name: "OASIS Grid contributors"
+license: "BSD-3-Clause"
+abstract: "Interactive OASIS icosahedral and cube-sphere grid explorer with MPI-domain postprocessing."

@@ -1,0 +1,25 @@
+# Python bytecode and local caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local build/package artifacts
+build/
+dist/
+*.egg-info/
+
+# Generated grid/postprocessing outputs
+*.npz
+*.png
+
+# Local editor and OS files
+.DS_Store
+.idea/
+.vscode/
