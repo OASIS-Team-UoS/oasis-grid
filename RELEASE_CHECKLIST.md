@@ -5,9 +5,8 @@ account.
 
 ## Repository metadata
 
-- Confirm the canonical GitHub repository URL.
-- Add the repository URL to `pyproject.toml` under `[project.urls]`.
-- Add the repository URL to `CITATION.cff` as `repository-code`.
+- Canonical repository: `https://github.com/jmmendonca/oasis-grid`
+- Group mirror: `https://github.com/OASIS-Team-UoS/oasis-grid`
 - Confirm the BSD-3-Clause license and copyright holder are acceptable.
 - Confirm the README wording is acceptable for public OASIS-related work.
 
@@ -32,16 +31,16 @@ git branch -M main
 Add remotes:
 
 ```bash
-git remote add origin git@github.com:<your-user>/oasis-grid.git
-git remote add group git@github.com:<group-account>/oasis-grid.git
+git remote add origin https://github.com/jmmendonca/oasis-grid.git
+git remote add mirror https://github.com/OASIS-Team-UoS/oasis-grid.git
 ```
 
 Push both:
 
 ```bash
 git push -u origin main
-git push -u group main
+git push -u mirror main
 ```
 
-If the group repository should be the canonical one, swap the names so `origin`
-points to the group repository and use a name such as `personal` for your fork.
+Use `origin` for the personal canonical repository and `mirror` for the group
+repository unless the project governance changes.

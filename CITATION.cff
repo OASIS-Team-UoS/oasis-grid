@@ -6,4 +6,5 @@ date-released: 2026-06-20
 authors:
   - name: "OASIS Grid contributors"
 license: "BSD-3-Clause"
+repository-code: "https://github.com/jmmendonca/oasis-grid"
 abstract: "Interactive OASIS icosahedral and cube-sphere grid explorer with MPI-domain postprocessing."

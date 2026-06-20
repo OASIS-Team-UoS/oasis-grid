@@ -38,6 +38,12 @@ dev = [
   "pytest>=8",
 ]
 
+[project.urls]
+Homepage = "https://github.com/jmmendonca/oasis-grid"
+Repository = "https://github.com/jmmendonca/oasis-grid"
+Mirror = "https://github.com/OASIS-Team-UoS/oasis-grid"
+Issues = "https://github.com/jmmendonca/oasis-grid/issues"
+
 [project.scripts]
 oasis-grid = "oasis_grid:main"
 

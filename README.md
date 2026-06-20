@@ -7,6 +7,11 @@ The icosahedral builder follows the ten-panel rhombic layout used by OASIS.
 The cube-sphere builder provides an equivalent six-panel grid so both layouts
 can be explored through the same domain and MPI postprocessing functions.
 
+## Repository
+
+- Canonical repository: <https://github.com/jmmendonca/oasis-grid>
+- Group mirror: <https://github.com/OASIS-Team-UoS/oasis-grid>
+
 ## Install
 
 ```bash
