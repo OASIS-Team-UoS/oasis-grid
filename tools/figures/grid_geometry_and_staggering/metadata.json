@@ -3,23 +3,23 @@
   "generation_command": "python3 tools/figures/grid_geometry_and_staggering/generate.py",
   "invocation": [
     "/usr/bin/python3",
-    "tools/figures/grid_geometry_and_staggering/generate.py"
+    "tools/figures/grid_geometry_and_staggering/generate.py",
+    "--reuse-native"
   ],
   "repository": {
     "path": "/home/jmmendonca/OASIS-UNIVERSE/oasis-grid",
-    "revision": "a7b2f50160e3bad2cc311de87acdc3d32489d5fd",
+    "revision": "842d62556f7e6745654682ebe67aff58a1d40ade",
     "dirty": true,
     "status_counts": {
-      " M": 3,
-      "??": 1
+      " M": 3
     },
     "input_status_porcelain": [
       " M oasis_grid.py",
-      "?? tools/figures/grid_geometry_and_staggering/"
+      " M tools/figures/grid_geometry_and_staggering/generate.py"
     ],
-    "tracked_diff_sha256": "ce1ead424c962d9a37fa00456431ca8f669d016415569a85e9f473285ac0dd16"
+    "tracked_diff_sha256": "67250e192fdadd6492d31fc874e9c6434f490cb2bdaa455b324d97f0d79463ee"
   },
-  "native_generation_mode": "fresh mesh-only native C++ generation",
+  "native_generation_mode": "checksum-verified archived native mesh",
   "native_provenance": {
     "checkout": "/home/jmmendonca/OASIS-UNIVERSE/oasis",
     "glevel": 2,
@@ -58,7 +58,7 @@
     "excerpt_sha256": "43b85bd37878ad7118b293502a2f8fe42dadce5830315fcf61a9d2f1be0a19f6"
   },
   "source_sha256": {
-    "tools/figures/grid_geometry_and_staggering/generate.py": "8d160df05edf76d246f6732147c02154c1295f6a93c29249bbc52e6c6aac1ac6",
+    "tools/figures/grid_geometry_and_staggering/generate.py": "c9a1c4e207e25d7a7746f47b1ece104dfbb5fddfbb6ea282a375de124b77d83e",
     "tools/figures/grid_geometry_and_staggering/native_mesh.py": "19560ddae56a02e419b52c8fedb7dcf8be1b492db18950b80b15be9d3387496d",
     "tools/figures/grid_geometry_and_staggering/audit_exports.py": "29a3c1a0d04e636a8bd77519da20318749bc322312a5776265adf128428e6798",
     "tools/figures/grid_geometry_and_staggering/config.json": "d763faff790102466934284091ca46ad346330ad6b705179e9ca2270308099e0",

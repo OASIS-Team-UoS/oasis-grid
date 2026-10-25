@@ -359,13 +359,13 @@ def render_staggering(fig,markers,config):
                 draw_arrow(ax,anchor,component,config)
         # One exemplar label per placement/component; only labels are offset.
         if kind == "A":
-            ax.text(.42,.32,"$h$",ha="right",va="top")
-            ax.text(.86,.44,"$u$",ha="left",va="top")
-            ax.text(.43,.87,"$v$",ha="right",va="bottom")
+            ax.annotate("$h$",(.5,.5),xytext=(-2,-2),textcoords="offset points",ha="right",va="top")
+            ax.annotate("$u$",(.635,.5),xytext=(0,-2),textcoords="offset points",ha="center",va="top")
+            ax.annotate("$v$",(.5,.70),xytext=(-2,0),textcoords="offset points",ha="right",va="center")
         elif kind == "C":
-            ax.text(.61,.58,"$h$",ha="left",va="bottom")
-            ax.text(1.13,.34,"$u$",ha="center",va="top")
-            ax.text(.37,1.14,"$v$",ha="right",va="center")
+            ax.annotate("$h$",(.5,.5),xytext=(2,2),textcoords="offset points",ha="left",va="bottom")
+            ax.annotate("$u$",(1.135,.5),xytext=(0,-2),textcoords="offset points",ha="center",va="top")
+            ax.annotate("$v$",(.5,1.135),xytext=(-2,0),textcoords="offset points",ha="right",va="center")
         else:
             ax.text(.61,.58,r"$h,\,\delta,\,\zeta$",ha="left",va="bottom")
         page_text(fig,x+25,12,annotations[k],config,ha="center",va="top",linespacing=1.25)
