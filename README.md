@@ -102,6 +102,20 @@ xyz, rhomb, panel_grids = generate_oasis_icosahedral_points(4, return_coarse=Tru
 The default MPI rank order is panel-major, then `tile_y`, then `tile_x`.
 Each `GridModel` exposes `points`, `panel_grids`, `panel_names`, and `domains`.
 
+## Publication figure
+
+Generate the horizontal geometry and variable-staggering figure from the
+included, verified native OASIS mesh snapshot:
+
+```bash
+python3 tools/figures/grid_geometry_and_staggering/generate.py --reuse-native
+```
+
+This creates vector PDF/SVG figures and 600-dpi PNG previews, including separate
+geometry and staggering groups. Configuration, LaTeX caption, mesh provenance,
+validation and instructions for refreshing the native mesh are in the
+[figure workflow guide](tools/figures/grid_geometry_and_staggering/README.md).
+
 ## Interactive controls
 
 - Grid selector: switch between icosahedral and cube-sphere grids.

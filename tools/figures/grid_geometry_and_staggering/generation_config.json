@@ -1,0 +1,42 @@
+{
+  "width_mm": 180,
+  "height_mm": 150,
+  "font_family": "DejaVu Sans",
+  "font_pt": 8.5,
+  "panel_font_pt": 9,
+  "group_font_pt": 10,
+  "mesh_line_pt": 0.42,
+  "boundary_line_pt": 0.85,
+  "pentagon_line_pt": 1.1,
+  "sphere_outline_pt": 0.65,
+  "schematic_line_pt": 0.5,
+  "arrow_line_pt": 0.9,
+  "dot_size_pt": 3.2,
+  "sphere_axes_size_mm": 50,
+  "schematic_axes_size_mm": 33,
+  "export_bottom_mm": -14,
+  "geometry_crop_bottom_mm": 70,
+  "staggering_crop_top_mm": 64,
+  "ink": "#303030",
+  "mesh_ink": "#4b4b4b",
+  "schematic_ink": "#9a9a9a",
+  "camera_longitude_deg": 22,
+  "camera_latitude_deg": 24,
+  "curve_step_deg": 0.5,
+  "latitude_longitude": {
+    "longitude_cells": 24,
+    "latitude_cells": 12
+  },
+  "cubed_sphere": {
+    "glevel": 2,
+    "projection": "equiangular"
+  },
+  "icosahedral_dual": {
+    "glevel": 2,
+    "spring_relaxation": false
+  },
+  "schematic_cells_per_axis": 2,
+  "preview_dpi": 600,
+  "area_tolerance_steradians": 1e-10,
+  "coordinate_tolerance": 2e-12
+}

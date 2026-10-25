@@ -1,0 +1,92 @@
+{
+  "export_sha256": {
+    "grid_geometry_and_staggering.pdf": "900dc3f4f20f17ba36ad784d0afb3ae41a7ab804613fb34e5bbb7ffd9d33430b",
+    "grid_geometry_and_staggering.svg": "2f3ee8484d430be418995ecbced80839d1ed86454ded1dbfb03fd32cf0cc1677",
+    "grid_geometry_and_staggering.png": "9ec1ce1f0d2a604402271d4099713b31d1d10260aa5fe31dcb4a1f428f7de9f9",
+    "horizontal_grid_geometries.pdf": "4bf02f9e85f0cf887b71f54ca38c53852dc966034e2e634219e3e35fb43591b9",
+    "horizontal_grid_geometries.svg": "ef2f1decfe585b5739bc1c1afc972b3b8042b395af7cdeb83f8302775d01e8ec",
+    "horizontal_grid_geometries.png": "118b4d9bc923ae093a58ab7a9a957dbafeae521001eaad9dbd15209fe3c1bb53",
+    "horizontal_variable_staggering.pdf": "1c4e715b5f2b990ad440f82d4d61e49f93021259738d7afb0d03c33d211dce13",
+    "horizontal_variable_staggering.svg": "b24651a0cceab5c116d413b257816824c0531e3e195394b9d412686be313a19f",
+    "horizontal_variable_staggering.png": "e9338a2148afe53acf8aea8defc31893755de91583e1bc7d66122866003f4150"
+  },
+  "formats": {
+    "grid_geometry_and_staggering": {
+      "pdf": {
+        "images": 0,
+        "embedded_fonts": true,
+        "minimum_font_pt": 8.5,
+        "all_text_within_page": true
+      },
+      "svg": {
+        "images": 0,
+        "editable_text": true,
+        "declared_font": "DejaVu Sans"
+      },
+      "png": {
+        "pixels": [
+          4251,
+          3874
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      }
+    },
+    "horizontal_grid_geometries": {
+      "pdf": {
+        "images": 0,
+        "embedded_fonts": true,
+        "minimum_font_pt": 8.5,
+        "all_text_within_page": true
+      },
+      "svg": {
+        "images": 0,
+        "editable_text": true,
+        "declared_font": "DejaVu Sans"
+      },
+      "png": {
+        "pixels": [
+          4251,
+          1889
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      }
+    },
+    "horizontal_variable_staggering": {
+      "pdf": {
+        "images": 0,
+        "embedded_fonts": true,
+        "minimum_font_pt": 8.5,
+        "all_text_within_page": true
+      },
+      "svg": {
+        "images": 0,
+        "editable_text": true,
+        "declared_font": "DejaVu Sans"
+      },
+      "png": {
+        "pixels": [
+          4251,
+          1842
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      }
+    }
+  },
+  "render_directory": "/dev/shm/oasis-figure-render-inspection",
+  "inspection_dpi": 144,
+  "versions": {
+    "pymupdf": "1.28.2",
+    "cairosvg": "2.9.1",
+    "pillow": "11.2.1"
+  },
+  "checks": "passed"
+}

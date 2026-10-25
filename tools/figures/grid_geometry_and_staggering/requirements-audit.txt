@@ -1,0 +1,4 @@
+# Optional export inspection only; figure generation uses the root requirements.txt.
+PyMuPDF>=1.24
+CairoSVG>=2.7
+Pillow>=10

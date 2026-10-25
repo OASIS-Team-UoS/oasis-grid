@@ -1,0 +1,445 @@
+{
+  "purpose": "Horizontal grid geometry and variable staggering are separate modelling choices.",
+  "generation_command": "python3 tools/figures/grid_geometry_and_staggering/generate.py",
+  "invocation": [
+    "/usr/bin/python3",
+    "tools/figures/grid_geometry_and_staggering/generate.py"
+  ],
+  "repository": {
+    "path": "/home/jmmendonca/OASIS-UNIVERSE/oasis-grid",
+    "revision": "a7b2f50160e3bad2cc311de87acdc3d32489d5fd",
+    "dirty": true,
+    "status_counts": {
+      " M": 3,
+      "??": 1
+    },
+    "input_status_porcelain": [
+      " M oasis_grid.py",
+      "?? tools/figures/grid_geometry_and_staggering/"
+    ],
+    "tracked_diff_sha256": "ce1ead424c962d9a37fa00456431ca8f669d016415569a85e9f473285ac0dd16"
+  },
+  "native_generation_mode": "fresh mesh-only native C++ generation",
+  "native_provenance": {
+    "checkout": "/home/jmmendonca/OASIS-UNIVERSE/oasis",
+    "glevel": 2,
+    "radius": 1.0,
+    "spring_relaxation": false,
+    "centre_relocation": "Icogrid::relocate_centres_thor",
+    "generator": "Icogrid::sphere_ico + Icogrid::find_qpoints_thor (unchanged native C++ bodies)",
+    "compiler": "c++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+    "compile_flags": [
+      "-std=c++17",
+      "-O1"
+    ],
+    "sources": {
+      "src/grid/grid_build.cpp": "dce1fa181af1e65b4e3b58df858b208515f8a617b4e4efaa4f2807a32996e406",
+      "src/grid/grid_pointsq.cpp": "a6314bb2b74d88957aeecec8fd36598951852581ab0991665a82df271fa5902e"
+    },
+    "native_python_coordinate_max_error": 1.2719202621569003e-16,
+    "shared_qpoint_max_error": 4.775249788392736e-16,
+    "independent_area_centroid_max_error": 2.2128001018189846e-15,
+    "independent_relocated_centre_max_error": 1.1060518526157679e-15,
+    "constructor_minimum_level": 4,
+    "coarse_mesh_note": "Level 2 uses the native mesh methods directly; it is not a supported full-model run configuration.",
+    "repository": {
+      "path": "/home/jmmendonca/OASIS-UNIVERSE/oasis",
+      "revision": "a4c07e5b030d8a6a3463ec665bf3bae5edb7ab70",
+      "dirty": true,
+      "status_counts": {
+        " M": 568,
+        " D": 559,
+        "??": 4367
+      },
+      "input_status_porcelain": [],
+      "tracked_diff_sha256": "7dc90f795f34af5c6f8a839d2740fb8a44ea4ec4bc86cb0ca78b31197beaa22c"
+    },
+    "mesh_sha256": "c89bf10703ab35708bfa4f2b7fdfd4b3e070b11669992a2ffc3dfd866f7c0d75",
+    "excerpt_sha256": "43b85bd37878ad7118b293502a2f8fe42dadce5830315fcf61a9d2f1be0a19f6"
+  },
+  "source_sha256": {
+    "tools/figures/grid_geometry_and_staggering/generate.py": "8d160df05edf76d246f6732147c02154c1295f6a93c29249bbc52e6c6aac1ac6",
+    "tools/figures/grid_geometry_and_staggering/native_mesh.py": "19560ddae56a02e419b52c8fedb7dcf8be1b492db18950b80b15be9d3387496d",
+    "tools/figures/grid_geometry_and_staggering/audit_exports.py": "29a3c1a0d04e636a8bd77519da20318749bc322312a5776265adf128428e6798",
+    "tools/figures/grid_geometry_and_staggering/config.json": "d763faff790102466934284091ca46ad346330ad6b705179e9ca2270308099e0",
+    "tools/figures/grid_geometry_and_staggering/caption.tex": "4e6e9c07b979f97996e61dc7d9b18b4d77477dc7e33e6c3a16f3d94654b710b6",
+    "tools/figures/grid_geometry_and_staggering/README.md": "08e2ea6e79efba5468066e895ef5e5b73072dfeb71e4d95c20732d62b65b8c90",
+    "oasis_grid.py": "166cf65b2887e51fb2d2f2f992354540468672aa465ecfe61ff1ab84994f4594"
+  },
+  "dependencies": {
+    "python": "3.10.12",
+    "numpy": "1.26.4",
+    "matplotlib": "3.10.3"
+  },
+  "config": {
+    "width_mm": 180,
+    "height_mm": 150,
+    "font_family": "DejaVu Sans",
+    "font_pt": 8.5,
+    "panel_font_pt": 9,
+    "group_font_pt": 10,
+    "mesh_line_pt": 0.42,
+    "boundary_line_pt": 0.85,
+    "pentagon_line_pt": 1.1,
+    "sphere_outline_pt": 0.65,
+    "schematic_line_pt": 0.5,
+    "arrow_line_pt": 0.9,
+    "dot_size_pt": 3.2,
+    "sphere_axes_size_mm": 50,
+    "schematic_axes_size_mm": 33,
+    "export_bottom_mm": -14,
+    "geometry_crop_bottom_mm": 70,
+    "staggering_crop_top_mm": 64,
+    "ink": "#303030",
+    "mesh_ink": "#4b4b4b",
+    "schematic_ink": "#9a9a9a",
+    "camera_longitude_deg": 22,
+    "camera_latitude_deg": 24,
+    "curve_step_deg": 0.5,
+    "latitude_longitude": {
+      "longitude_cells": 24,
+      "latitude_cells": 12
+    },
+    "cubed_sphere": {
+      "glevel": 2,
+      "projection": "equiangular"
+    },
+    "icosahedral_dual": {
+      "glevel": 2,
+      "spring_relaxation": false
+    },
+    "schematic_cells_per_axis": 2,
+    "preview_dpi": 600,
+    "area_tolerance_steradians": 1e-10,
+    "coordinate_tolerance": 2e-12
+  },
+  "camera": {
+    "projection": "orthographic",
+    "basis_rows_east_north_view": [
+      [
+        -0.374606593415912,
+        0.9271838545667874,
+        0.0
+      ],
+      [
+        -0.37711964852057606,
+        -0.15236622828004923,
+        0.9135454576426009
+      ],
+      [
+        0.8470245987390465,
+        0.3422201518180751,
+        0.4067366430758002
+      ]
+    ],
+    "visible_hemisphere": "dot(position,view) >= 0",
+    "sphere_diameter_mm": 48.78048780487805
+  },
+  "generators": {
+    "latitude_longitude": "reference_latlon in generate.py; regular, not Gaussian",
+    "cubed_sphere": "oasis_grid.build_grid_model; equiangular gnomonic; explorer generator, not a runtime OASIS backend",
+    "icosahedral_dual": "Icogrid::sphere_ico + Icogrid::find_qpoints_thor (unchanged native C++ bodies)"
+  },
+  "geometry_checks": {
+    "latitude_longitude": {
+      "vertices": 266,
+      "edges": 552,
+      "cells": 288,
+      "euler_characteristic": 2,
+      "connected": true,
+      "edge_incidence_histogram": {
+        "2": 552
+      },
+      "all_face_windings_outward": true,
+      "opposite_shared_edge_directions": true,
+      "unit_radius_max_error": 1.1102230246251565e-16,
+      "total_area_steradians": 12.566370614359172,
+      "total_area_error_steradians": 0.0,
+      "area_method": "analytic longitude_width * (sin north - sin south)",
+      "polygon_degree_histogram": {
+        "3": 48,
+        "4": 240
+      }
+    },
+    "cubed_sphere": {
+      "vertices": 98,
+      "edges": 192,
+      "cells": 96,
+      "euler_characteristic": 2,
+      "connected": true,
+      "edge_incidence_histogram": {
+        "2": 192
+      },
+      "all_face_windings_outward": true,
+      "opposite_shared_edge_directions": true,
+      "unit_radius_max_error": 1.1102230246251565e-16,
+      "total_area_steradians": 12.566370614359172,
+      "total_area_error_steradians": 0.0,
+      "area_method": "oriented great-circle triangle solid angles",
+      "polygon_degree_histogram": {
+        "4": 96
+      }
+    },
+    "icosahedral_dual": {
+      "vertices": 320,
+      "edges": 480,
+      "cells": 162,
+      "euler_characteristic": 2,
+      "connected": true,
+      "edge_incidence_histogram": {
+        "2": 480
+      },
+      "all_face_windings_outward": true,
+      "opposite_shared_edge_directions": true,
+      "unit_radius_max_error": 2.220446049250313e-16,
+      "total_area_steradians": 12.566370614359172,
+      "total_area_error_steradians": 0.0,
+      "area_method": "oriented great-circle triangle solid angles",
+      "polygon_degree_histogram": {
+        "5": 12,
+        "6": 150
+      },
+      "relocated_centres_inside_native_polygons": true,
+      "minimum_inward_edge_plane_dot": 0.02130190167422188,
+      "reciprocal_neighbor_connectivity": true,
+      "pentagons_global": 12,
+      "pentagons_with_visible_boundary": 6
+    }
+  },
+  "staggering_checks": {
+    "A_collocated": true,
+    "C_components_on_correct_faces": true,
+    "Z_collocated_no_stored_velocity": true,
+    "positions": {
+      "A": {
+        "h": [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            1.5,
+            0.5
+          ],
+          [
+            0.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5
+          ]
+        ],
+        "u": [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            1.5,
+            0.5
+          ],
+          [
+            0.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5
+          ]
+        ],
+        "v": [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            1.5,
+            0.5
+          ],
+          [
+            0.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5
+          ]
+        ]
+      },
+      "C": {
+        "h": [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            1.5,
+            0.5
+          ],
+          [
+            0.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5
+          ]
+        ],
+        "u": [
+          [
+            0.0,
+            0.5
+          ],
+          [
+            1.0,
+            0.5
+          ],
+          [
+            2.0,
+            0.5
+          ],
+          [
+            0.0,
+            1.5
+          ],
+          [
+            1.0,
+            1.5
+          ],
+          [
+            2.0,
+            1.5
+          ]
+        ],
+        "v": [
+          [
+            0.5,
+            0.0
+          ],
+          [
+            1.5,
+            0.0
+          ],
+          [
+            0.5,
+            1.0
+          ],
+          [
+            1.5,
+            1.0
+          ],
+          [
+            0.5,
+            2.0
+          ],
+          [
+            1.5,
+            2.0
+          ]
+        ]
+      },
+      "Z": {
+        "h": [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            1.5,
+            0.5
+          ],
+          [
+            0.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5
+          ]
+        ],
+        "delta": [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            1.5,
+            0.5
+          ],
+          [
+            0.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5
+          ]
+        ],
+        "zeta": [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            1.5,
+            0.5
+          ],
+          [
+            0.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5
+          ]
+        ]
+      }
+    }
+  },
+  "clipping_checks": {
+    "analytic_limb_intersections": true,
+    "hidden_endpoints_visible_middle": true,
+    "hidden_edges_omitted": true,
+    "straddling_edges_preserved": true,
+    "latitude_small_circles": true
+  },
+  "typography_checks": {
+    "text_overlap_pairs": [],
+    "minimum_font_pt": 8.5
+  },
+  "export_checks": {
+    "grid_geometry_and_staggering": {
+      "width_mm": 180.0,
+      "height_mm": 164,
+      "svg_has_editable_text": true,
+      "svg_raster_images": 0,
+      "no_partially_clipped_text": true,
+      "preview_dpi": 600
+    },
+    "horizontal_grid_geometries": {
+      "width_mm": 180.0,
+      "height_mm": 80,
+      "svg_has_editable_text": true,
+      "svg_raster_images": 0,
+      "no_partially_clipped_text": true,
+      "preview_dpi": 600
+    },
+    "horizontal_variable_staggering": {
+      "width_mm": 180.0,
+      "height_mm": 78,
+      "svg_has_editable_text": true,
+      "svg_raster_images": 0,
+      "no_partially_clipped_text": true,
+      "preview_dpi": 600
+    }
+  },
+  "limitations": [
+    "Mesh density is chosen for legibility; no claim of equal effective resolution.",
+    "No spring relaxation in the selected mesh; native polygon corners and centre relocation are retained.",
+    "Coarse native mesh-only methods bypass the full model's glevel>=4 constructor guard.",
+    "Checks validate this figure's construction, not dynamical accuracy or solver conservation.",
+    "SVG text is editable; PDF fonts are embedded; curves use vector polylines at the configured angular step."
+  ],
+  "bibliography": "No manuscript .bib found in the inspected repositories; caption uses no invented citation keys."
+}

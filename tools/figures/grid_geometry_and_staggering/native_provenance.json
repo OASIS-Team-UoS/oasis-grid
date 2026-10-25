@@ -1,0 +1,37 @@
+{
+  "checkout": "/home/jmmendonca/OASIS-UNIVERSE/oasis",
+  "glevel": 2,
+  "radius": 1.0,
+  "spring_relaxation": false,
+  "centre_relocation": "Icogrid::relocate_centres_thor",
+  "generator": "Icogrid::sphere_ico + Icogrid::find_qpoints_thor (unchanged native C++ bodies)",
+  "compiler": "c++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+  "compile_flags": [
+    "-std=c++17",
+    "-O1"
+  ],
+  "sources": {
+    "src/grid/grid_build.cpp": "dce1fa181af1e65b4e3b58df858b208515f8a617b4e4efaa4f2807a32996e406",
+    "src/grid/grid_pointsq.cpp": "a6314bb2b74d88957aeecec8fd36598951852581ab0991665a82df271fa5902e"
+  },
+  "native_python_coordinate_max_error": 1.2719202621569003e-16,
+  "shared_qpoint_max_error": 4.775249788392736e-16,
+  "independent_area_centroid_max_error": 2.2128001018189846e-15,
+  "independent_relocated_centre_max_error": 1.1060518526157679e-15,
+  "constructor_minimum_level": 4,
+  "coarse_mesh_note": "Level 2 uses the native mesh methods directly; it is not a supported full-model run configuration.",
+  "repository": {
+    "path": "/home/jmmendonca/OASIS-UNIVERSE/oasis",
+    "revision": "a4c07e5b030d8a6a3463ec665bf3bae5edb7ab70",
+    "dirty": true,
+    "status_counts": {
+      " M": 568,
+      " D": 559,
+      "??": 4367
+    },
+    "input_status_porcelain": [],
+    "tracked_diff_sha256": "7dc90f795f34af5c6f8a839d2740fb8a44ea4ec4bc86cb0ca78b31197beaa22c"
+  },
+  "mesh_sha256": "c89bf10703ab35708bfa4f2b7fdfd4b3e070b11669992a2ffc3dfd866f7c0d75",
+  "excerpt_sha256": "43b85bd37878ad7118b293502a2f8fe42dadce5830315fcf61a9d2f1be0a19f6"
+}

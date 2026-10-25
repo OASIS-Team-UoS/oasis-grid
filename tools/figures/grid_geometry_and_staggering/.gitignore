@@ -1,0 +1,5 @@
+# Version the publication previews and exact native mesh snapshot.
+!grid_geometry_and_staggering.png
+!horizontal_grid_geometries.png
+!horizontal_variable_staggering.png
+!native_mesh.npz

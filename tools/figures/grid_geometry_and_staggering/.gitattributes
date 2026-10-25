@@ -1,0 +1,11 @@
+# Keep generated publication artifacts out of the default source review.
+*.svg linguist-generated=true -whitespace
+*.pdf linguist-generated=true
+*.png linguist-generated=true
+native_mesh.npz linguist-generated=true
+native_mesh_extract.cpp linguist-generated=true -whitespace
+metadata.json linguist-generated=true
+native_provenance.json linguist-generated=true
+generation_config.json linguist-generated=true
+generated_files.json linguist-generated=true
+export_audit.json linguist-generated=true
